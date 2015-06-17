@@ -11,6 +11,7 @@
 #import "ViewController.h"
 #import "Movie.h"
 #import <UIImageView+AFNetworking.h>
+//#import "UIImageView+FadeIn.h"
 
 @interface MoviesViewController () <UITableViewDataSource, UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;

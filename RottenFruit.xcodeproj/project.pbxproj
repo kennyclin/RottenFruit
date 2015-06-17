@@ -17,6 +17,7 @@
 		C51B99B61B3068FB00680528 /* MoviesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C51B99B51B3068FB00680528 /* MoviesViewController.m */; };
 		C51B99B91B307B8900680528 /* MovieCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C51B99B81B307B8900680528 /* MovieCell.m */; };
 		C51B99BC1B31106B00680528 /* Movie.m in Sources */ = {isa = PBXBuildFile; fileRef = C51B99BB1B31106B00680528 /* Movie.m */; };
+		C5BD0EE41B31C238000506FA /* UIImageView+FadeIn.m in Sources */ = {isa = PBXBuildFile; fileRef = C5BD0EE31B31C238000506FA /* UIImageView+FadeIn.m */; };
 		D235F2EF8A3F69806BFC1518 /* libPods-RottenFruit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 835336C6F222CE6498543E29 /* libPods-RottenFruit.a */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +54,8 @@
 		C51B99B81B307B8900680528 /* MovieCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieCell.m; sourceTree = "<group>"; };
 		C51B99BA1B31106B00680528 /* Movie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Movie.h; sourceTree = "<group>"; };
 		C51B99BB1B31106B00680528 /* Movie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Movie.m; sourceTree = "<group>"; };
+		C5BD0EE21B31C238000506FA /* UIImageView+FadeIn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+FadeIn.h"; sourceTree = "<group>"; };
+		C5BD0EE31B31C238000506FA /* UIImageView+FadeIn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+FadeIn.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +131,8 @@
 				C51B99B81B307B8900680528 /* MovieCell.m */,
 				C51B99BA1B31106B00680528 /* Movie.h */,
 				C51B99BB1B31106B00680528 /* Movie.m */,
+				C5BD0EE21B31C238000506FA /* UIImageView+FadeIn.h */,
+				C5BD0EE31B31C238000506FA /* UIImageView+FadeIn.m */,
 			);
 			path = RottenFruit;
 			sourceTree = "<group>";
@@ -297,6 +302,7 @@
 				C51B99971B30280800680528 /* ViewController.m in Sources */,
 				C51B99B91B307B8900680528 /* MovieCell.m in Sources */,
 				C51B99941B30280800680528 /* AppDelegate.m in Sources */,
+				C5BD0EE41B31C238000506FA /* UIImageView+FadeIn.m in Sources */,
 				C51B99911B30280800680528 /* main.m in Sources */,
 				C51B99B61B3068FB00680528 /* MoviesViewController.m in Sources */,
 			);

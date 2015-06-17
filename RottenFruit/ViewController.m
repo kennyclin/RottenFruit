@@ -7,8 +7,9 @@
 //
 
 #import "ViewController.h"
-#import <UIImageView+AFNetworking.h>
+//#import <UIImageView+AFNetworking.h>
 #import "MBProgressHUD.h"
+#import "UIImageView+FadeIn.h"
 
 @interface ViewController ()
 
@@ -21,7 +22,7 @@
     self.synopsisLabel.text=self.myMovie.synopsis;
     [MBProgressHUD showHUDAddedTo:self.view animated:YES];
     dispatch_async(dispatch_get_global_queue( DISPATCH_QUEUE_PRIORITY_LOW, 0), ^{
-        [self.posterView setImageWithURLRequest:[NSURLRequest requestWithURL: self.myMovie.detailedPoster] placeholderImage:nil success:^(NSURLRequest *request, NSHTTPURLResponse *response, UIImage *image) {
+        [self.posterView fadeInImageWithURLRequest:[NSURLRequest requestWithURL: self.myMovie.detailedPoster] placeholderImage:nil success:^(NSURLRequest *request, NSHTTPURLResponse *response, UIImage *image) {
                  dispatch_async(dispatch_get_main_queue(), ^{
                      self.posterView.image=image;
                      [MBProgressHUD hideHUDForView:self.view animated:YES];
