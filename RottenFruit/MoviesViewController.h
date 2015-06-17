@@ -9,9 +9,10 @@
 #import <UIKit/UIKit.h>
 #import "Movie.h"
 
-@interface MoviesViewController : UIViewController
+@interface MoviesViewController : UIViewController <UISearchBarDelegate, UISearchDisplayDelegate>
 
 @property (strong, nonatomic) Movie *selectedMovie;
 @property (strong, nonatomic) UIRefreshControl *refreshControl;
+@property (weak, nonatomic) IBOutlet UISearchBar *itemSearch;
 
 @end
