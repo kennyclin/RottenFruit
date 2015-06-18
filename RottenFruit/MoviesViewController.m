@@ -142,7 +142,7 @@
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     MovieCell *selectedCell=sender;
     NSIndexPath *indexPath=[self.tableView indexPathForCell: selectedCell];
-    NSDictionary *movie=self.movies[indexPath.row];
+    NSDictionary *movie=self.filtered?self.filteredMovies[indexPath.row]:self.movies[indexPath.row];
     ViewController *destVC=[segue destinationViewController];
     [self.selectedMovie init:movie];
     destVC.myMovie=self.selectedMovie;
